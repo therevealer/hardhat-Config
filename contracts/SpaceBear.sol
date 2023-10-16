@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Spacebear is ERC721, ERC721URIStorage, Ownable {
     uint256 private _nextTokenId;
 
-    constructor(address initialOwner)
+      constructor(address initialOwner)
         ERC721("Spacebear", "SBR")
         Ownable(initialOwner)
     {}
@@ -43,4 +43,3 @@ contract Spacebear is ERC721, ERC721URIStorage, Ownable {
         return super.supportsInterface(interfaceId);
     }
 }
-
