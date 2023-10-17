@@ -13,6 +13,10 @@ contract Spacebear is ERC721, ERC721URIStorage, Ownable {
         Ownable(initialOwner)
     {}
 
+    //Facing issues with constructor while deploying on goerli
+    //My assumption --- There are chnages between the tutorial code when compared to openzepplin current code base,
+    // so there is a clash between the old and the new.
+
     function _baseURI() internal pure override returns (string memory) {
         return "https://ethereum-blockchain-developer.com/2022-06-nft-truffle-hardhat-foundry/nftdata/";
     }
